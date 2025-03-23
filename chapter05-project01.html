@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Management</title>
+    <link rel="stylesheet" href="chapter05-project01.css">
+    <style>
+        body 
+        {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+        
+        table
+        {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            margin: 20px 0;
+        }
+        th, td 
+        {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th
+        {
+            background-color: #607D8B;
+            color: white;
+        }
+        .status
+        {
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+        }
+        .status-shipped 
+        {
+            background-color: green;
+        }
+        .status-processing 
+        {
+            background-color: orange;
+        }
+        .status-pending 
+        {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <section>
+        <h2>Data</h2>
+        <table>
+            <caption>Orders</caption>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Date</th>
+                    <th>Customer</th>
+                    <th>Country</th>
+                    <th>Progress</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>123</td>
+                    <td>Sep 12, 2017</td>
+                    <td>Jean Rousseau</td>
+                    <td>France</td>
+                    <td><progress value="100" max="100"></progress></td>
+                    <td><span class="status status-shipped">Shipped</span></td>
+                </tr>
+                <tr>
+                    <td>144</td>
+                    <td>Sep 20, 2017</td>
+                    <td>Georg Hegel</td>
+                    <td>Germany</td>
+                    <td><progress value="100" max="100"></progress></td>
+                    <td><span class="status status-shipped">Shipped</span></td>
+                </tr>
+                <tr>
+                    <td>149</td>
+                    <td>Oct 3, 2017</td>
+                    <td>John Locke</td>
+                    <td>England</td>
+                    <td><progress value="50" max="100"></progress></td>
+                    <td><span class="status status-processing">Processing</span></td>
+                </tr>
+                <tr>
+                    <td>162</td>
+                    <td>Oct 8, 2017</td>
+                    <td>Thomas Hobbes</td>
+                    <td>England</td>
+                    <td><progress value="20" max="100"></progress></td>
+                    <td><span class="status status-pending">Pending</span></td>
+                </tr>
+                <tr>
+                    <td>177</td>
+                    <td>Oct 10, 2017</td>
+                    <td>Johann Fichte</td>
+                    <td>Germany</td>
+                    <td><progress value="20" max="100"></progress></td>
+                    <td><span class="status status-pending">Pending</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>
